@@ -13,9 +13,7 @@ MorningMallow is a wearable smart eye mask that gently wakes you using soft ligh
 - 🌤️ **Blue Light Simulation**: Simulates a natural sunrise to nudge your circadian rhythm
 - 💓 **Temple Vibration**: Gentle low-frequency haptics to wake without noise
 - 🌡️ **Thermal Control**: Subtle forehead heating and cooling for sleep transitions
-- 🎵 **Sound Therapy**: Built-in speakers for sleep and wake-up audio
 - 📱 **App Integration**: Control all features via a mobile app
-- 🧠 **Smart Sensors**: Detect when you're waking to automate lights or blinds
 - 👯‍♀️ **Roommate-Aware Mode**: Minimizes external disruptions in shared spaces
 
 ---
@@ -24,16 +22,14 @@ MorningMallow is a wearable smart eye mask that gently wakes you using soft ligh
 
 | Feature                        | Status       | Description |
 |-------------------------------|--------------|-------------|
-| Multi-sensory Wake System     | ✅ Built      | Light, vibration, and sound integration |
-| App Control                   | 🔄 In Dev     | Mobile app for full feature control |
-| Sleep Environment Sensing     | 🔄 In Dev     | Track room temperature, humidity, and noise |
+| Multi-sensory Wake System     | ✅ Built      | **Light, vibration, and sound integration **|
+| App Control                   | ✅ Built     | Mobile app for full feature control |
+| Sleep Environment Sensing     | 🧠 Planning     | Track room temperature, humidity, and noise |
 | Smart Blinds + Automation     | 🧠 Planning   | Detect wake-up and control room lighting |
-| Roommate Sync Mode            | 🧠 Planning   | Connect devices in the same room |
-| Scent Diffuser (Optional)     | 🧠 Planning   | Use scent cues to support wake-up or sleep |
 
 ---
 
-## 🧪 Why It Works
+## 🧪 Why It Matters/Works
 
 - **77%** of students say roommates' alarms disturb their sleep
 - Studies show **light-based wake-up** improves morning alertness by **30%**
@@ -52,25 +48,4 @@ MorningMallow is a wearable smart eye mask that gently wakes you using soft ligh
 - App (planned) with Wi-Fi sync and sleep data visualizations
 
 ---
-
-## 💰 Prototype Bill of Materials (BOM)
-
-| Component | Purpose | Price |
-|----------|---------|-------|
-| Flat Vibration Buzzers | Gentle temple wake-up | $12.99 |
-| Heating Pad | Forehead thermal cue | $10.00 |
-| LED Strip | Simulated sunrise | $14.99 |
-| Eye Mask Base | Hardware shell | $42.50 (5x) |
-| Temperature Sensor | Optional sleep environment sensing | $26 |
-| Foam Padding | Comfort + sensor support | $17 |
-
-Total estimated cost: **~$120–150**
-
----
-
-## 🛠️ How to Run the Project
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YujunGe07/MallowMask.git
-   cd MallowMask
+Wharton M&TSI Team 3
