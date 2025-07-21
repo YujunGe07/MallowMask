@@ -29,7 +29,15 @@ body {
     align-items: center;
     padding: 20px 5%;
     background-color: var(--color-bg-main);
-    box-shadow: 0 2px 4px var(--color-shadow);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: box-shadow 0.2s ease;
+}
+
+.navbar.sticky {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 
 .navbar .logo {
@@ -81,6 +89,7 @@ body {
 }
 
 .hero-section {
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,9 +131,10 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 60px 5%;
-    background-color: var(--color-bg-main); /* Light background for the feature section */
+    background-color: var(--color-accent-2);
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 
 .feature-item {
@@ -138,7 +148,7 @@ body {
 .feature-item .icon {
     width: 50px; /* Adjust icon size as needed */
     height: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .feature-item h3 {
@@ -231,20 +241,20 @@ body {
 }
 
 .percentage-circle {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background-color: var(--color-accent-2);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 40px;
+    margin-right: 60px;
     flex-shrink: 0;
 }
 
 .percentage {
     font-family: 'Georgia', serif;
-    font-size: 3.5em;
+    font-size: 4em;
     color: var(--color-accent-3);
     font-weight: 700;
 }
@@ -330,6 +340,18 @@ body {
     margin: 0;
 }
 
+.how-it-works-icons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .how-it-works-icons i {
+    font-size: 36px;
+  }  
+
 .how-it-works ul li {
     margin-bottom: 10px;
     font-size: 1em;
@@ -403,14 +425,14 @@ body {
     font-size: 2.2em;
     font-weight: 700;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: var(--color-text-main);
 }
 
 .stats-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
     padding: 0 5%;
     flex-wrap: wrap;
     margin-bottom: 80px;
@@ -419,7 +441,7 @@ body {
 .stat-card {
     background-color: var(--color-bg-main);
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 15px 24px rgba(255, 190, 152, 0.8);
     padding: 30px;
     text-align: center;
     width: 300px;
@@ -438,6 +460,7 @@ body {
     font-size: 2.5em;
     font-weight: 600;
     color: var(--color-accent-3);
+    gap: 15px;
 }
 
 .stat-card .icon-percentage img {
@@ -460,58 +483,54 @@ body {
 }
 
 .our-advantage-section {
-    padding: 80px 5%;
-    background-color: var(--color-bg-main);
     text-align: center;
-}
-
-.our-advantage-section .section-title {
-    margin-top: 0;
-    margin-bottom: 60px;
+    padding: 40px 5%;
 }
 
 .advantage-grid {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .advantage-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 320px;
     text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-.advantage-item .icon-img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
+
+.icon-img {
+    width: 350px;
+    height: 190px;
     margin-bottom: 20px;
 }
 
 .advantage-item h3 {
-    font-size: 1.4em;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: var(--color-text-main);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2px;
 }
 
 .advantage-item .subtitle {
-    font-size: 1em;
+    font-size: 1.1rem;
+    font-style: italic;
     font-weight: 500;
-    color: var(--color-text-secondary);
-    margin-bottom: 15px;
+    color: #333;
+    margin-bottom: 12px;
 }
 
 .advantage-item p {
-    font-size: 0.9em;
-    color: var(--color-text-tertiary);
+    font-size: 1rem;
+    color: #444;
     line-height: 1.6;
 }
+
 
 @media (max-width: 992px) {
     .stat-card {
@@ -575,16 +594,67 @@ body {
     background-color: var(--color-bg-lighter);
 }
 
+
+.comparison-section {
+  background-color: #fde7dc;
+  padding: 60px 40px;
+  border-radius: 20px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  padding: 20px 30px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-title {
+  flex: 1;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.feature-check-icon {
+    color: var(--color-accent-1);
+    font-size: 30px;
+  }
+
+.feature-columns {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.feature-cell img {
+  width: 22px;
+  height: 22px;
+}
+
+.feature-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+
 .comparison-section {
     padding: 60px 5%;
-    background-color: var(--color-bg-main);
+    background-color: var(--color-accent-2);
     text-align: center;
 }
 
 .comparison-table-container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: var(--color-bg-main);
+    background-color: var(--color-accent-2);
     border-radius: 10px;
     overflow-x: auto;
 }
@@ -598,9 +668,21 @@ body {
 
 .comparison-table th,
 .comparison-table td {
+    
     padding: 15px 20px;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-accent-1);
 }
+
+.comparison-table tbody td {
+    color: var(--color-text-tertiary);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.comparison-table tbody td:first-child {
+    text-align: left;
+}
+
 
 .comparison-table thead th {
     background-color: var(--color-bg-main);
@@ -635,6 +717,7 @@ body {
 }
 
 .comparison-table .header-row th {
+    background-color: var(--color-accent-2);
     font-weight: 500;
     font-size: 1.1em;
 }
@@ -649,7 +732,7 @@ body {
 
 .app-section {
     background-color: var(--color-bg-lighter);
-    padding: 80px 5%;
+    padding: 80px 12%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -658,6 +741,7 @@ body {
 }
 
 .app-content {
+    margin-left: 60px;
     flex: 1;
     min-width: 300px;
     max-width: 550px;
@@ -704,9 +788,11 @@ body {
 .app-download-buttons a {
     display: inline-flex;
     align-items: center;
-    background-color: var(--color-btn-dark);
-    color: #fff;
+    background-color: var(--color-accent-2);
+    color: black;
+    font-weight: 600;
     padding: 12px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
@@ -714,7 +800,8 @@ body {
 }
 
 .app-download-buttons a:hover {
-    background-color: var(--color-btn-dark-hover);
+    background-color: var(--color-accent-3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .app-download-buttons a img {
@@ -724,19 +811,17 @@ body {
 
 .app-screenshot {
     flex: 1;
-    min-width: 280px;
-    max-width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.app-screenshot img {
+  }
+  
+  .app-screenshot img {
     max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px var(--color-shadow-card);
-}
+    height: 600px;
+    width: 320px;
+  }
+  
 
 @media (max-width: 768px) {
     .comparison-section {
@@ -839,10 +924,10 @@ body {
 
 .culture-image-container {
     background-color: var(--color-bg-orange-pale);
-    padding: 40px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 20px var(--color-shadow);
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -870,14 +955,15 @@ body {
 .testimonials-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-wrap: nowrap;
+    gap: 40px;
 }
 
 .testimonial-card {
-    background-color: var(--color-bg-main);
+    margin-top: 30px;
+    background-color: var(--color-accent-2);
     border-radius: 10px;
-    box-shadow: 0 4px 15px var(--color-shadow-strong);
+    box-shadow: 0 4px 15px var(--color-accent-1);
     padding: 30px;
     width: 280px;
     text-align: left;

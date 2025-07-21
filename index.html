@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morningmallow</title>
+    <script src="https://kit.fontawesome.com/2abe36492e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -15,8 +16,8 @@
 
     <nav class="navbar">
         <div class="logo">
-            <img src="https://assets.website-files.com/5f8b5f3a7f8c9d00bc0d2f0a/5f8b5f3a7f8c9d0d2a0d2f0e_Morningmallow%20Logo.svg" alt="Morningmallow Logo">
-            Morningmallow
+            <img src= "Logo.png" Morningmallow Logo">
+              Morningmallow
         </div>
         <ul class="nav-links">
             <li><a href="#">About Us</a></li>
@@ -36,22 +37,32 @@
 
     <section class="features-section">
         <div class="feature-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/1000/1000571.png" alt="Bed Icon" class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/9567/9567116.png" alt="Bed Icon" class="icon">
             <h3>All-in-One Smart Wake-Up</h3>
             <p>Wearable light, vibration, and thermal comfort in one mask.</p>
         </div>
         <div class="feature-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/2800/2800164.png" alt="Smiling Face Icon" class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/2604/2604687.png" alt="Smiling Face Icon" class="icon">
             <h3>Roommate-Friendly Wake-Up</h3>
             <p>Silent, non-intrusive cues gently wake you up without disturbing roommates or partners.</p>
         </div>
         <div class="feature-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/869/869106.png" alt="Tag Icon" class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/617/617418.png" alt="Tag Icon" class="icon">
             <h3>Affordable Wellness Tech</h3>
             <p>Under $100 cost makes better mornings accessible for students and busy professionals.</p>
         </div>
     </section>
 </body>
+<script>
+    window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+    });
+</script>
 </html>
 
 <!DOCTYPE html>
@@ -81,7 +92,7 @@
 
         <section class="section-three">
             <div class="image-container">
-                <img src="https://googleusercontent.com/file_content/0" alt="MorningMallow device sketch">
+                <img src="How it works.png" alt="MorningMallow device sketch">
             </div>
             <div class="how-it-works">
                 <h2>How It Works</h2>
@@ -92,9 +103,14 @@
                     <li>- <strong>Thermal rings</strong> warm or cool your face to regulate your sleep cycle.</li>
                 </ul>
                 <p>All of this is packed into a breathable, adjustable eye mask</p>
-                <div class="icons">
-                    <img src="https://example.com/icon1.png" alt="Lightbulb icon - placeholder"> <img src="https://example.com/icon2.png" alt="Temperature icon - placeholder"> <img src="https://example.com/icon3.png" alt="Vibration icon - placeholder"> </div>
-                <a href="#" class="learn-more-button">Learn More</a>
+                <div class="how-it-works-icons">
+                    <i class="fa-solid fa-lightbulb" style="color: #ffbe98;"></i>
+                    <i class="fa-solid fa-bell" style="color: #ffbe98;"></i>
+                    <i class="fa-solid fa-temperature-three-quarters" style="color: #ffbe98;"></i>
+                  </div>
+                  
+                  <a href="#" class="learn-more-button">Learn More</a>
+                  
             </div>
         </section>
     </div>
@@ -115,21 +131,21 @@
     <div class="stats-container">
         <div class="stat-card">
             <div class="icon-percentage">
-                <img src="https://cdn-icons-png.flaticon.com/512/2985/2985223.png" alt="Up Arrow"> 30%
+                <i class="fa-solid fa-arrow-up" style="color: #ecb28f;"></i> 30%
             </div>
             <h3>Wake-Up Alertness Boost</h3>
             <p>From exposure to blue light in the morning</p>
         </div>
         <div class="stat-card">
             <div class="icon-percentage">
-                <img src="https://cdn-icons-png.flaticon.com/512/3246/3246473.png" alt="Percentage Icon"> 95%
+                <i class="fa-regular fa-bell-slash" style="color: #ecb28f;"></i> 95%
             </div>
             <h3>Silent Wake-Up Reliability</h3>
             <p>Vibration alarms successfully woke users in 95% of trials</p>
         </div>
         <div class="stat-card">
             <div class="icon-percentage">
-                <img src="https://cdn-icons-png.flaticon.com/512/2985/2985222.png" alt="Down Arrow"> 20%
+                <i class="fa-solid fa-arrow-down" style="color: #ecb28f;"></i> 20%
             </div>
             <h3>Faster Sleep Onset</h3>
             <p>Forehead warming helps users fall asleep 20% faster</p>
@@ -140,25 +156,26 @@
         <h2 class="section-title">Our Advantage</h2>
         <div class="advantage-grid">
             <div class="advantage-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/1000/1000571.png" alt="Smart Wake-Up Mask" class="icon-img">
+                <img src= "Advantage 1.png" alt="Smart Wake-Up Mask" class="icon-img">
                 <h3>Smart Wake-Up Mask</h3>
                 <p class="subtitle">Science-Backed Gentle Mornings</p>
                 <p>Combines soft sunrise LEDs, temple vibrations, and optional thermal control to wake you naturally. No more loud alarms.</p>
             </div>
             <div class="advantage-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/4812/4812328.png" alt="Features That Fit You" class="icon-img">
+                <img src="Advantage 2.png" alt="Features That Fit You" class="icon-img">
                 <h3>Features That Fit You</h3>
                 <p class="subtitle">Fully Customizable</p>
                 <p>Adjust light brightness, vibration intensity, and schedule everything through the simple app or onboard controls.</p>
             </div>
             <div class="advantage-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/266/266497.png" alt="Comfortable by Design" class="icon-img">
+                <img src="Advantage 3.png" alt="Comfortable by Design" class="icon-img">
                 <h3>Comfortable by Design</h3>
                 <p class="subtitle">Made for Real Life</p>
                 <p>Breathable, lightweight fabric. The wide headband fits securely so you can turn and sleep naturally</p>
             </div>
         </div>
     </section>
+    
 </body>
 </html>
 <!DOCTYPE html>
@@ -183,39 +200,40 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="4" class="key-features-header">Key Features</td>
+                      <td colspan="4" class="key-features-header">Key Features</td>
                     </tr>
                     <tr>
-                        <td class="feature-title">Roommate-Friendly & Shared Space Approved</td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
-                        <td></td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
+                      <td class="feature-title">Roommate-Friendly & Shared Space Approved</td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
                     </tr>
                     <tr>
-                        <td class="feature-title">Customizable settings</td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
-                        <td></td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
+                      <td class="feature-title">Customizable settings</td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
                     </tr>
                     <tr>
-                        <td class="feature-title">Thermal sleep/wake regulation</td>
-                        <td></td>
-                        <td></td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
+                      <td class="feature-title">Thermal sleep/wake regulation</td>
+                      <td></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
                     </tr>
                     <tr>
-                        <td class="feature-title">Student-budget friendly</td>
-                        <td></td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
+                      <td class="feature-title">Student-budget friendly</td>
+                      <td></td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
                     </tr>
                     <tr>
-                        <td class="feature-title">Multi-sensory gentle wake cues</td>
-                        <td></td>
-                        <td></td>
-                        <td><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="checkbox-icon"></td>
+                      <td class="feature-title">Multi-sensory gentle wake cues</td>
+                      <td></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
                     </tr>
-                </tbody>
+                  </tbody>
+                  
             </table>
         </div>
     </section>
@@ -249,7 +267,7 @@
             </div>
         </div>
         <div class="app-screenshot">
-            <img src="http://googleusercontent.com/file_content/0" alt="MorningMallow App Screenshot">
+            <img src="App.png" alt="MorningMallow App Screenshot">
         </div>
     </section>
 </body>
@@ -266,11 +284,11 @@
 <body>
     <section class="culture-section">
         <div class="culture-content">
-            <h2>Our Culture: Wellness, Innovation, and Respect</h2>
+            <h2>Our Culture: <em>Wellness, Innovation, and Respect</em></h2>
             <p>At Morningmallow, we believe better sleep starts with <strong>respecting your own routine</strong> and the <strong>people you live with</strong>. We’re students, young professionals, and dreamers designing tech that’s gentle, smart, and share-space friendly. We’re building a community that wakes up together, refreshed and ready to do good things.</p>
         </div>
         <div class="culture-image-container">
-            <img src="http://googleusercontent.com/file_content/0" alt="Morningmallow culture illustration" class="culture-image">
+            <img src= "Our culture.png" alt="Morningmallow culture illustration" class="culture-image">
         </div>
     </section>
 
