@@ -1,17 +1,26 @@
+:root {
+    --color-text-main: hsl(0, 0%, 20%);
+    --color-bg-main: #fff;
+    --color-bg-alt: #f9f9f9;
+    --color-accent-1: #EFCDC2;
+    --color-accent-2: #FEECE2;
+    --color-accent-3: #FFBE98;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .top-banner {
-    background-color: #f0f0f0;
+    background-color: var(--color-accent-2);
     text-align: center;
     padding: 10px 0;
     font-size: 0.9em;
-    color: #555;
+    color: var(--color-text-main);
 }
 
 .navbar {
@@ -19,8 +28,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: var(--color-bg-main);
+    box-shadow: 0 2px 4px var(--color-shadow);
 }
 
 .navbar .logo {
@@ -48,18 +57,18 @@ body {
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: #555;
+    color: var(--color-text-secondary);
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar .nav-links a:hover {
-    color: #000;
+    color: var(--color-text-main);
 }
 
 .navbar .contact-button {
-    background-color: #ff8c42; /* A shade of orange similar to the image */
-    color: white;
+    background-color: var(--color-accent-3);
+    color: var(--color-text-main);
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -68,7 +77,7 @@ body {
 }
 
 .navbar .contact-button:hover {
-    background-color: #e67d36;
+    background-color: var(--color-accent-1);
 }
 
 .hero-section {
@@ -77,7 +86,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 80px 5% 40px;
-    background-color: #fff;
+    background-color: var(--color-bg-main);
 }
 
 .hero-section .lightbulb-icon {
@@ -95,8 +104,8 @@ body {
 }
 
 .hero-section .learn-more-button {
-    background-color: #ff8c42;
-    color: white;
+    background-color: var(--color-accent-3);
+    color: var(--color-text-main);
     padding: 12px 30px;
     border-radius: 25px;
     text-decoration: none;
@@ -106,14 +115,14 @@ body {
 }
 
 .hero-section .learn-more-button:hover {
-    background-color: #e67d36;
+    background-color: var(--color-accent-1);
 }
 
 .features-section {
     display: flex;
     justify-content: space-around;
     padding: 60px 5%;
-    background-color: #fff; /* Light background for the feature section */
+    background-color: var(--color-bg-main); /* Light background for the feature section */
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -141,7 +150,7 @@ body {
 
 .feature-item p {
     font-size: 0.95em;
-    color: #666;
+    color: var(--color-text-tertiary);
     line-height: 1.6;
 }
 
@@ -203,8 +212,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-main);
 }
 
 .container {
@@ -225,7 +234,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #ffe0b2;
+    background-color: var(--color-accent-2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +245,7 @@ body {
 .percentage {
     font-family: 'Georgia', serif;
     font-size: 3.5em;
-    color: #ff9800;
+    color: var(--color-accent-3);
     font-weight: 700;
 }
 
@@ -249,18 +258,18 @@ body {
     font-family: 'Georgia', serif;
     font-size: 2.5em;
     line-height: 1.2;
-    color: #333;
+    color: var(--color-text-main);
     margin-bottom: 10px;
 }
 
 .disturb-text p {
     font-size: 0.9em;
-    color: #666;
+    color: var(--color-text-tertiary);
     line-height: 1.5;
 }
 
 .section-two {
-    background-color: #fff3e0;
+    background-color: var(--color-accent-2);
     padding: 50px 20px;
     text-align: center;
     margin-top: 40px;
@@ -270,14 +279,14 @@ body {
 .section-two h2 {
     font-family: 'Georgia', serif;
     font-size: 2.2em;
-    color: #555;
+    color: var(--color-text-secondary);
     margin-bottom: 10px;
 }
 
 .section-two h3 {
     font-family: 'Georgia', serif;
     font-size: 2.8em;
-    color: #ff9800;
+    color: var(--color-accent-3);
     margin-top: 0;
 }
 
@@ -311,7 +320,7 @@ body {
 .how-it-works h2 {
     font-family: 'Georgia', serif;
     font-size: 1.8em;
-    color: #333;
+    color: var(--color-text-main);
     margin-bottom: 15px;
 }
 
@@ -325,11 +334,11 @@ body {
     margin-bottom: 10px;
     font-size: 1em;
     line-height: 1.5;
-    color: #555;
+    color: var(--color-text-secondary);
 }
 
 .how-it-works ul li strong {
-    color: #ff9800;
+    color: var(--color-accent-3);
 }
 
 .icons {
@@ -345,8 +354,8 @@ body {
 
 .learn-more-button {
     display: inline-block;
-    background-color: #ff9800;
-    color: white;
+    background-color: var(--color-accent-3);
+    color: var(--color-text-main);
     padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
@@ -356,7 +365,7 @@ body {
 }
 
 .learn-more-button:hover {
-    background-color: #e68900;
+    background-color: var(--color-accent-1);
 }
 
 @media (max-width: 768px) {
@@ -385,8 +394,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
-    background-color: #f9f9f9;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-lighter);
 }
 
 .section-title {
@@ -395,7 +404,7 @@ body {
     font-weight: 700;
     margin-top: 60px;
     margin-bottom: 40px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .stats-container {
@@ -408,9 +417,9 @@ body {
 }
 
 .stat-card {
-    background-color: #fff;
+    background-color: var(--color-bg-main);
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     padding: 30px;
     text-align: center;
     width: 300px;
@@ -428,7 +437,7 @@ body {
     margin-bottom: 20px;
     font-size: 2.5em;
     font-weight: 600;
-    color: #ff8c42;
+    color: var(--color-accent-3);
 }
 
 .stat-card .icon-percentage img {
@@ -441,18 +450,18 @@ body {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .stat-card p {
     font-size: 0.95em;
-    color: #666;
+    color: var(--color-text-tertiary);
     line-height: 1.6;
 }
 
 .our-advantage-section {
     padding: 80px 5%;
-    background-color: #fff;
+    background-color: var(--color-bg-main);
     text-align: center;
 }
 
@@ -488,19 +497,19 @@ body {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .advantage-item .subtitle {
     font-size: 1em;
     font-weight: 500;
-    color: #555;
+    color: var(--color-text-secondary);
     margin-bottom: 15px;
 }
 
 .advantage-item p {
     font-size: 0.9em;
-    color: #666;
+    color: var(--color-text-tertiary);
     line-height: 1.6;
 }
 
@@ -562,20 +571,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
-    background-color: #f9f9f9;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-lighter);
 }
 
 .comparison-section {
     padding: 60px 5%;
-    background-color: #fff;
+    background-color: var(--color-bg-main);
     text-align: center;
 }
 
 .comparison-table-container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--color-bg-main);
     border-radius: 10px;
     overflow-x: auto;
 }
@@ -590,13 +599,13 @@ body {
 .comparison-table th,
 .comparison-table td {
     padding: 15px 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .comparison-table thead th {
-    background-color: #fff;
+    background-color: var(--color-bg-main);
     font-weight: 600;
-    color: #555;
+    color: var(--color-text-secondary);
     text-align: center;
 }
 
@@ -610,12 +619,12 @@ body {
 }
 
 .comparison-table tbody td {
-    color: #666;
+    color: var(--color-text-tertiary);
 }
 
 .comparison-table .feature-title {
     font-weight: 500;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .comparison-table .checkbox-icon {
@@ -635,11 +644,11 @@ body {
     font-weight: 600;
     text-align: left;
     padding: 20px 20px 10px 0;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .app-section {
-    background-color: #f9f9f9;
+    background-color: var(--color-bg-lighter);
     padding: 80px 5%;
     display: flex;
     flex-wrap: wrap;
@@ -659,7 +668,7 @@ body {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .app-feature-list {
@@ -676,12 +685,12 @@ body {
     font-size: 1.25em;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .app-feature-list li p {
     font-size: 0.95em;
-    color: #666;
+    color: var(--color-text-tertiary);
     line-height: 1.6;
     padding-left: 15px;
 }
@@ -695,7 +704,7 @@ body {
 .app-download-buttons a {
     display: inline-flex;
     align-items: center;
-    background-color: #333;
+    background-color: var(--color-btn-dark);
     color: #fff;
     padding: 12px 25px;
     border-radius: 8px;
@@ -705,7 +714,7 @@ body {
 }
 
 .app-download-buttons a:hover {
-    background-color: #555;
+    background-color: var(--color-btn-dark-hover);
 }
 
 .app-download-buttons a img {
@@ -726,7 +735,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--color-shadow-card);
 }
 
 @media (max-width: 768px) {
@@ -799,13 +808,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
-    background-color: #f9f9f9;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-lighter);
 }
 
 .culture-section {
     padding: 80px 5%;
-    background-color: #fff;
+    background-color: var(--color-bg-main);
     text-align: center;
 }
 
@@ -818,21 +827,21 @@ body {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .culture-content p {
     font-size: 1.1em;
     line-height: 1.7;
-    color: #555;
+    color: var(--color-text-secondary);
     margin-bottom: 40px;
 }
 
 .culture-image-container {
-    background-color: #fcf1eb;
+    background-color: var(--color-bg-orange-pale);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px var(--color-shadow);
     max-width: 700px;
     margin: 0 auto;
 }
@@ -846,7 +855,7 @@ body {
 }
 
 .testimonials-section {
-    background-color: #fcf1eb;
+    background-color: var(--color-bg-orange-pale);
     padding: 80px 5%;
     text-align: center;
 }
@@ -855,7 +864,7 @@ body {
     font-size: 1.8em;
     font-weight: 600;
     margin-bottom: 50px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .testimonials-grid {
@@ -866,9 +875,9 @@ body {
 }
 
 .testimonial-card {
-    background-color: #fff;
+    background-color: var(--color-bg-main);
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px var(--color-shadow-strong);
     padding: 30px;
     width: 280px;
     text-align: left;
@@ -887,7 +896,7 @@ body {
 .testimonial-card p {
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
+    color: var(--color-text-main);
     flex-grow: 1;
     margin-bottom: 20px;
 }
@@ -914,12 +923,12 @@ body {
 .testimonial-card .author-name {
     font-weight: 600;
     font-size: 0.95em;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .testimonial-card .author-title {
     font-size: 0.85em;
-    color: #777;
+    color: var(--color-text-muted);
 }
 
 @media (max-width: 992px) {
@@ -999,21 +1008,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
-    background-color: #f9f9f9;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-lighter);
 }
 
 .pricing-section {
     padding: 80px 5%;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--color-bg-lighter);
 }
 
 .pricing-section h2 {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 50px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .pricing-cards-container {
@@ -1024,9 +1033,9 @@ body {
 }
 
 .pricing-card {
-    background-color: #fff;
+    background-color: var(--color-accent-1);
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     padding: 30px;
     width: 300px;
     text-align: left;
@@ -1037,19 +1046,11 @@ body {
     min-height: 380px;
 }
 
-.pricing-card.classic {
-    background-color: #fcf1eb;
-    border: 1px solid #ffdbcc;
-}
-
-.pricing-card.premium {
-    background-color: #fcf1eb;
-    border: 1px solid #ffdbcc;
-}
-
+.pricing-card.classic,
+.pricing-card.premium,
 .pricing-card.founder {
-    background-color: #fcf1eb;
-    border: 1px solid #ffdbcc;
+    background-color: var(--color-accent-1);
+    border: 1px solid var(--color-accent-3);
 }
 
 .pricing-card .badge-icon {
@@ -1065,14 +1066,14 @@ body {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .pricing-card .price {
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #ff8c42;
+    color: var(--color-accent-3);
 }
 
 .pricing-card ul {
@@ -1087,7 +1088,7 @@ body {
     align-items: center;
     margin-bottom: 15px;
     font-size: 0.95em;
-    color: #555;
+    color: var(--color-text-secondary);
 }
 
 .pricing-card ul li img {
@@ -1099,55 +1100,42 @@ body {
 
 .pricing-card .select-button {
     display: inline-block;
-    background-color: #fff;
-    color: #ff8c42;
+    background-color: var(--color-accent-2);
+    color: var(--color-text-main);
     padding: 12px 30px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.0em;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 1px solid #ff8c42;
+    border: 1px solid var(--color-accent-3);
 }
 
-.pricing-card.classic .select-button {
-    background-color: #ff8c42;
-    color: white;
+.pricing-card.classic .select-button,
+.pricing-card.premium .select-button,
+.pricing-card.founder .select-button {
+    background-color: var(--color-accent-3);
+    color: var(--color-text-main);
     border: none;
 }
 
-.pricing-card.premium .select-button {
-    background-color: #fff;
-    color: #ff8c42;
-    border: 1px solid #ff8c42;
-}
-
-.pricing-card.founder .select-button {
-    background-color: #fff;
-    color: #ff8c42;
-    border: 1px solid #ff8c42;
-}
-
-.pricing-card .select-button:hover {
-    background-color: #e67d36;
-    color: white;
-    border: 1px solid #e67d36;
-}
-
-.pricing-card.classic .select-button:hover {
-    background-color: #e67d36;
-    color: white;
+.pricing-card .select-button:hover,
+.pricing-card.classic .select-button:hover,
+.pricing-card.premium .select-button:hover,
+.pricing-card.founder .select-button:hover {
+    background-color: var(--color-accent-1);
+    color: var(--color-text-main);
     border: none;
 }
 
 .footer {
-    background-color: #f9f9f9;
+    background-color: var(--color-accent-2);
     padding: 80px 5%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 40px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--color-accent-1);
 }
 
 .footer-column {
@@ -1160,13 +1148,13 @@ body {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .footer-column .logo-text {
     font-size: 1.8em;
     font-weight: 700;
-    color: #333;
+    color: var(--color-text-main);
     margin-bottom: 20px;
 }
 
@@ -1182,49 +1170,49 @@ body {
 
 .footer-column ul li a {
     text-decoration: none;
-    color: #666;
+    color: var(--color-text-tertiary);
     font-size: 0.95em;
     transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .footer-column .contact-info p {
     margin: 0 0 8px 0;
-    color: #666;
+    color: var(--color-text-tertiary);
     font-size: 0.95em;
 }
 
 .footer-column .contact-info a {
-    color: #666;
+    color: var(--color-text-tertiary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-column .contact-info a:hover {
-    color: #333;
+    color: var(--color-text-main);
 }
 
 .app-download-footer a {
     display: block;
     margin-bottom: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--color-accent-2);
+    border: 1px solid var(--color-accent-1);
     border-radius: 8px;
     padding: 10px 15px;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: var(--color-text-main);
     font-size: 0.9em;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .app-download-footer a:hover {
-    background-color: #f0f0f0;
-    border-color: #ccc;
+    background-color: var(--color-accent-1);
+    border-color: var(--color-accent-3);
 }
 
 .app-download-footer a img {
