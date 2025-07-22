@@ -165,7 +165,7 @@ const thumbnails = document.querySelectorAll('.product-thumb');
                 }
             });
         });
-        // Footer contact mailto is already set
+        // Footer contact mailto is already set and works by default
         // Add to Cart buttons show alert
         const addToCartBtns = document.querySelectorAll('.cta-button');
         addToCartBtns.forEach(btn => {

@@ -157,7 +157,7 @@ body {
 }
 
 .hero-section {
-    height: 100vh;
+    height: 86vh;
     min-height: unset;
     display: flex;
     flex-direction: column;
@@ -168,8 +168,8 @@ body {
 }
 
 .hero-section .lightbulb-icon {
-    width: 80px; /* Adjust size as needed */
-    height: 80px;
+    width: 280px; /* Adjust size as needed */
+    height: 180px;
     margin-bottom: 30px;
 }
 
