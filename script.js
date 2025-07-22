@@ -96,3 +96,92 @@ const thumbnails = document.querySelectorAll('.product-thumb');
                 }
             }
         });
+
+        // Smooth scroll for nav and footer links
+        const scrollLinks = document.querySelectorAll('a[href^="#"]');
+        scrollLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#') && href.length > 1) {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+        // Learn More buttons scroll to features section
+        const learnMoreBtns = document.querySelectorAll('.learn-more-button');
+        learnMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const features = document.querySelector('.features-section');
+                if (features) features.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        // App download buttons open store links in new tab
+        const appStoreBtn = document.querySelectorAll('a[href="#"] img[alt*="Apple App Store"]');
+        const playStoreBtn = document.querySelectorAll('a[href="#"] img[alt*="Google Play"]');
+        appStoreBtn.forEach(img => {
+            const a = img.closest('a');
+            if (a) {
+                a.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open('https://apps.apple.com/', '_blank');
+                });
+            }
+        });
+        playStoreBtn.forEach(img => {
+            const a = img.closest('a');
+            if (a) {
+                a.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open('https://play.google.com/store', '_blank');
+                });
+            }
+        });
+        // Footer About Us links scroll to sections
+        const aboutLinks = document.querySelectorAll('.footer-column ul li a');
+        aboutLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const text = link.textContent.toLowerCase();
+                if (text.includes('learn')) {
+                    e.preventDefault();
+                    const section = document.querySelector('.culture-section');
+                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                } else if (text.includes('careers')) {
+                    e.preventDefault();
+                    const section = document.querySelector('.our-advantage-section');
+                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                } else if (text.includes('press')) {
+                    e.preventDefault();
+                    const section = document.querySelector('.testimonials-section');
+                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                } else if (text.includes('subscriptions')) {
+                    e.preventDefault();
+                    const section = document.querySelector('.pricing-section');
+                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        // Footer contact mailto is already set
+        // Add to Cart buttons show alert
+        const addToCartBtns = document.querySelectorAll('.cta-button');
+        addToCartBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (btn.closest('.modal-cta')) {
+                    e.preventDefault();
+                    alert('Added to cart! (Demo)');
+                }
+            });
+        });
+        // Contact Us button scrolls to footer
+        const contactBtn = document.querySelector('.contact-button');
+        if (contactBtn) {
+            contactBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const footer = document.querySelector('footer.footer');
+                if (footer) footer.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
