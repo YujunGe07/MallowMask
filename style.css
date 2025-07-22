@@ -1905,7 +1905,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 40px
-    border-top: 1px solid var(--color-accent-1);
+    border-top 1px solid var(--color-accent-1);
 }
 
 .footer-column {

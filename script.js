@@ -185,3 +185,22 @@ const thumbnails = document.querySelectorAll('.product-thumb');
                 if (footer) footer.scrollIntoView({ behavior: 'smooth' });
             });
         }
+        // Product gallery: switch between three views
+        const productThumbs = document.querySelectorAll('.product-thumb');
+        const productImages = document.querySelectorAll('.product-main-image .product-image');
+        productThumbs.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Remove active from all thumbs
+                productThumbs.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+                // Show only the selected image
+                const view = thumb.getAttribute('data-view');
+                productImages.forEach((img, idx) => {
+                    if (img.classList.contains('view-' + view)) {
+                        img.style.display = 'block';
+                    } else {
+                        img.style.display = 'none';
+                    }
+                });
+            });
+        });
