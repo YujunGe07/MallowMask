@@ -8,33 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="top-banner">
         Start your day refreshed
     </div>
-
     <nav class="navbar">
-        <div class="logo">
-            <img src= "Logo.png" Morningmallow Logo">
-              Morningmallow
-        </div>
+        <a href="#top" class="logo nav-home-link">
+            <img src="Logo.png" alt="Morningmallow Logo">
+            Morningmallow
+        </a>
         <ul class="nav-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Our App</a></li>
-            <li><a href="#">Purchase Info</a></li>
-            <li><a href="#">App Download</a></li>
+            <li><a href="#culture">About Us</a></li>
+            <li><a href="#advantage">Features</a></li>
+            <li><a href="#app">Our App</a></li>
+            <li><a href="#pricing">Our Product</a></li>
+            <li><a href="#footer">App Download</a></li>
         </ul>
-        <a href="#" class="contact-button">Contact Us</a>
+        <a href="#footer" class="contact-button">Contact Us</a>
     </nav>
-
     <section class="hero-section">
         <img src="https://cdn-icons-png.flaticon.com/512/32/32230.png" alt="Lightbulb Icon" class="lightbulb-icon">
         <h1>Transform your mornings with Morningmallow</h1>
         <a href="#" class="learn-more-button">Learn More</a>
     </section>
-
     <section class="features-section">
         <div class="feature-item">
             <img src="https://cdn-icons-png.flaticon.com/512/9567/9567116.png" alt="Bed Icon" class="icon">
@@ -52,28 +50,6 @@
             <p>Under $100 cost makes better mornings accessible for students and busy professionals.</p>
         </div>
     </section>
-</body>
-<script>
-    window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
-        navbar.classList.add('sticky');
-    } else {
-        navbar.classList.remove('sticky');
-    }
-    });
-</script>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MorningMallow</title>
-    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
     <div class="container">
         <section class="section-one">
             <div class="percentage-circle">
@@ -84,12 +60,10 @@
                 <p>- By Qi Meng, Jingwen Zhang, Jian Kang & Yue Wu, Science of the Total Environment, 2019</p>
             </div>
         </section>
-
         <section class="section-two">
             <h2>Say Goodbye to Jarring Alarms.</h2>
             <h3>Say Hello to MorningMallow.</h3>
         </section>
-
         <section class="section-three">
             <div class="image-container">
                 <img src="How it works.png" alt="MorningMallow device sketch">
@@ -107,27 +81,12 @@
                     <i class="fa-solid fa-lightbulb" style="color: #ffbe98;"></i>
                     <i class="fa-solid fa-bell" style="color: #ffbe98;"></i>
                     <i class="fa-solid fa-temperature-three-quarters" style="color: #ffbe98;"></i>
-                  </div>
-                  
-                  <a href="#" class="learn-more-button">Learn More</a>
-                  
+                </div>
+                <a href="#" class="learn-more-button">Learn More</a>
             </div>
         </section>
     </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morningmallow - Why it works</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
     <h2 class="section-title">Why it works: Backed by Research</h2>
-
     <div class="stats-container">
         <div class="stat-card">
             <div class="icon-percentage">
@@ -151,7 +110,6 @@
             <p>Forehead warming helps users fall asleep 20% faster</p>
         </div>
     </div>
-
     <section class="our-advantage-section">
         <h2 class="section-title">Our Advantage</h2>
         <div class="advantage-grid">
@@ -175,18 +133,6 @@
             </div>
         </div>
     </section>
-    
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morningmallow - Compare & App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
     <section class="comparison-section">
         <div class="comparison-table-container">
             <table class="comparison-table">
@@ -233,11 +179,9 @@
                       <td><i class="fa-solid fa-square-check feature-check-icon" style="color: var(--color-accent-1);"></i></td>
                     </tr>
                   </tbody>
-                  
             </table>
         </div>
     </section>
-
     <section class="app-section">
         <div class="app-content">
             <h2>Meet the MorningMallow App</h2>
@@ -270,18 +214,6 @@
             <img src="App.png" alt="MorningMallow App Screenshot">
         </div>
     </section>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morningmallow - Culture & Testimonials</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
     <section class="culture-section">
         <div class="culture-content">
             <h2>Our Culture: <em>Wellness, Innovation, and Respect</em></h2>
@@ -291,7 +223,6 @@
             <img src= "Our culture.png" alt="Morningmallow culture illustration" class="culture-image">
         </div>
     </section>
-
     <section class="testimonials-section">
         <h2>Join our community of well-rested students and pros</h2>
         <div class="testimonials-grid">
@@ -337,55 +268,158 @@
             </div>
         </div>
     </section>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morningmallow - Choose Your Mask & Footer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <section class="pricing-section">
-        <h2>Choose your mask</h2>
-        <div class="pricing-cards-container">
-            <div class="pricing-card classic">
-                <img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Checked" class="badge-icon">
-                <h3>Classic Mask</h3>
-                <p class="price">$29/ month</p>
-                <ul>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> 5 soothing sessions weekly</li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> Sleep enhancement sounds</li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> Join our wellness community</li>
-                </ul>
-                <a href="#" class="select-button">Select Basic</a>
+    <!-- Modals -->
+    <div class="modal-overlay" id="standardModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('standardModal')">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Standard Package</h3>
+                <p class="modal-subtitle">Everything you need for better sleep</p>
             </div>
-
-            <div class="pricing-card premium">
-                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921387.png" alt="Leaf" class="badge-icon">
-                <h3>Premium Bundle</h3>
-                <p class="price">$29/ month</p>
-                <ul>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> 10 soothing sessions weekly</li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> Sleep enhancement sounds</li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/1632/1632708.png" alt="X Icon"> Join our wellness community</li>
+            <div class="modal-content">
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <div class="feature-icon">😴</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Smart Eye Mask</div>
+                            <div class="feature-desc">Premium comfort design with light and thermal therapy</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Basic App Access</div>
+                            <div class="feature-desc">Essential sleep tracking and wake-up customization</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">⏰</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Gentle Wake Alarms</div>
+                            <div class="feature-desc">Light and vibration patterns for natural awakening</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">🔋</div>
+                        <div class="feature-text">
+                            <div class="feature-title">7-Day Battery Life</div>
+                            <div class="feature-desc">USB-C charging with long-lasting performance</div>
+                        </div>
+                    </li>
                 </ul>
-                <a href="#" class="select-button">Select Pro</a>
+                <div class="modal-price">
+                    <div class="price-large">$50</div>
+                    <div class="price-desc">One-time purchase, no subscription required</div>
+                </div>
+                <div class="modal-cta">
+                    <button class="cta-button">Add to Cart</button>
+                </div>
             </div>
-
-            <div class="pricing-card founder">
-                <h3>Founder's Pack</h3>
-                <p class="price">$49/ month</p>
-                <ul>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> Unlimited soothing sessions</li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> Sleep enhancement sounds</li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/758/758368.png" alt="Check Icon"> Join our wellness community</li>
+        </div>
+    </div>
+    <div class="modal-overlay" id="premiumModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('premiumModal')">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Premium Package</h3>
+                <p class="modal-subtitle">Advanced features for sleep optimization</p>
+            </div>
+            <div class="modal-content">
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <div class="feature-icon">😴</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Smart Eye Mask</div>
+                            <div class="feature-desc">Premium comfort design with light and thermal therapy</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">👑</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Premium App Access</div>
+                            <div class="feature-desc">Advanced analytics, sleep coaching, and AI recommendations</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Detailed Sleep Analytics</div>
+                            <div class="feature-desc">REM tracking, sleep quality scores, and trend analysis</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">🎵</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Sound Library</div>
+                            <div class="feature-desc">Nature sounds, white noise, and guided meditations</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">🌡️</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Smart Climate Control</div>
+                            <div class="feature-desc">Temperature optimization based on sleep phases</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">📅</div>
+                        <div class="feature-text">
+                            <div class="feature-title">Smart Scheduling</div>
+                            <div class="feature-desc">Calendar integration and optimal wake time suggestions</div>
+                        </div>
+                    </li>
                 </ul>
-                <a href="#" class="select-button">Select Basic</a>
+                <div class="modal-price">
+                    <div class="price-large">$75</div>
+                    <div class="price-desc">Includes 1 year premium app access</div>
+                </div>
+                <div class="modal-cta">
+                    <button class="cta-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="pricing-section" id="pricing">
+        <div class="product-purchase-container">
+            <div class="product-gallery">
+                <div class="gallery-backdrop"></div>
+                <div class="product-main-image">
+                    <div class="pulse-ring"></div>
+                    <div class="product-placeholder">Morningmallow Mask</div>
+                </div>
+                <div class="product-thumbnails">
+                    <div class="product-thumb active">View 1</div>
+                    <div class="product-thumb">View 2</div>
+                    <div class="product-thumb">View 3</div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Morningmallow Smart Eye Mask</h2>
+                <div class="product-rating">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">5.0</span>
+                    <span class="review-count">(12,000+ reviews)</span>
+                </div>
+                <p class="product-description">Wake up refreshed with gentle light, vibration, and thermal comfort. Designed for shared spaces and better mornings.</p>
+                <div class="product-price">$50.00</div>
+                <div class="product-options">
+                    <button class="purchase-btn standard-btn">
+                        <div>
+                            <strong>Standard</strong>
+                            <div class="option-desc">Includes mask + basic app access</div>
+                        </div>
+                        <div class="option-price">$50</div>
+                        <div class="option-icons"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    </button>
+                    <button class="purchase-btn premium-btn">
+                        <div>
+                            <strong>Premium</strong>
+                            <div class="option-desc">Includes mask + premium app access with advanced features</div>
+                        </div>
+                        <div class="option-price">$75</div>
+                        <div class="option-icons"><i class="fa-solid fa-crown"></i></div>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -426,3 +460,4 @@
     </footer>
 </body>
 </html>
+
